@@ -1,0 +1,6 @@
+if __name__ == '__main__':
+   # n,a= int(input()),input().split()
+    #print(max([i for i in a if i!=max(a)]))
+    n = int(input())
+    arr = list(map(int, input().split()))
+    print(max([x for x in arr if x!=max(arr)]))
