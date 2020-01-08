@@ -1,0 +1,14 @@
+if __name__ == '__main__':
+    N = int(input())
+    l=[]
+    for i in range(N):
+        a=input().split()
+        if a[0]=='insert':
+            eval("l."+a[0]+"("+a[1]+","+a[2]+")")
+        elif a[0]=='remove' or a[0]=='append':
+            eval("l."+a[0]+"("+a[1]+")")
+        elif a[0]=='print':
+            print(l)
+        else:
+            eval("l."+a[0]+"()")
+
