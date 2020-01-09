@@ -1,0 +1,15 @@
+from itertools import combinations
+def minion_game(string):
+    count_st=0
+    count_k=0
+    for i in range(len(string)):
+        if string[i] not in ['A','E','I','O','U']:
+            count_st+=len(string)-i
+        else:
+            count_k+=len(string)-i
+    if count_st>count_k:
+        print('Stuart',count_st)
+    elif count_st<count_k:
+        print('Kevin',count_k)
+    else:
+        print('Draw')
