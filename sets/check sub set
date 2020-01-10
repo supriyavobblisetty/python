@@ -1,0 +1,8 @@
+n=int(input())
+for i in range(n):
+    m,a=int(input()),set(map(int,input().split()))
+    m,b=int(input()),set(map(int,input().split()))
+    if a<=b:
+        print('True')
+    else:
+        print('False')
