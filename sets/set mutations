@@ -1,0 +1,6 @@
+n,x=int(input()),set(map(int,input().split()))
+n=int(input())
+for i in range(n):
+    a,b=input().split(),set(map(int,input().split()))
+    eval("x."+a[0]+"(b)")
+print(sum(x))
