@@ -1,0 +1,5 @@
+n,a=int(input()),list(map(int,input().split()))
+m,b=int(input()),list(map(int,input().split()))
+for i in sorted(list(set(a)-set(b))+list(set(b)-set(a))):
+    print(i)# Enter your code here. Read input from STDIN. Print output to STDOUT
+
