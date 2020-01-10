@@ -1,0 +1,10 @@
+n,h=input(),0
+x=[int(i) for i in input().split()]
+a=set([int(i) for i in input().split()])
+b=set([int(i) for i in input().split()])
+for i in x:
+    if i in a:
+        h+=1
+    elif i in b:
+        h-=1
+print(h)# Enter your code here. Read input from STDIN. Print output to STDOUT
