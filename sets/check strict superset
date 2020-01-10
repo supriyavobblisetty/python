@@ -1,0 +1,11 @@
+a,b,x=set(map(int,input().split())),int(input()),0
+for i in range(b):
+    c=set(map(int,input().split()))
+    if c<a:
+        x+=1
+    else:
+        print('False')
+        break
+if x==b:
+    print('True')# Enter your code here. Read input from STDIN. Print output to STDOUT
+
