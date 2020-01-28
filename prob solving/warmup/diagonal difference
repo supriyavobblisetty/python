@@ -1,0 +1,12 @@
+def read_line(_):
+    return [int(x) for x in input().split()]
+
+num_lines = int(input())
+    
+mat = [read_line(i) for i in range(num_lines)]
+
+first_diag = sum(mat[i][i] for i in range(num_lines))
+second_diag = sum(mat[i][num_lines-1-i] for i in range(num_lines))
+abs_diff = abs(first_diag - second_diag)
+
+print(abs_diff)
