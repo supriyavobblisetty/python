@@ -6,3 +6,12 @@ sum = 0
 for num in nums:
     sum += num
 print(sum)
+
+
+
+
+or 
+n=input()
+l=[int(i) for i in input().split()]
+print(sum(l))
+
